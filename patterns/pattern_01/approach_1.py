@@ -1,5 +1,5 @@
 a = 5
-b = 2
+b = 5
 
 def main():
     for i in range(a):
