@@ -32,3 +32,11 @@ e.g. a problem in binary trees, under subsection traversals, and problem name in
     ```bash
     git checkout -b branch_name commit_hash # create and switch to that branch
     ```
+## Steps to push a new branch to remote
+1. Create one or more commits on the branch.
+2. Push the branch
+    ```bash
+    git push --set-upstream origin branch_name
+    # or
+    git push -u origin branch_name
+    ```
