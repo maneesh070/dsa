@@ -1,10 +1,9 @@
-a = 5
+height = 5
+
 def main():
-    b = 1
-    for i in range(a):
-        for j in range(b):
+    for i in range(height):
+        for _ in range(i+1):
             print('*', end='')
-        b += 1
         print('')
 
 if __name__ == '__main__':
