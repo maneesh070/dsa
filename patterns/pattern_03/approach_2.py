@@ -1,6 +1,8 @@
+height = 6
+
 def main():
     j = ''
-    for i in range(1, 6):
+    for i in range(1, height):
         j = j + str(i)
         print(j)
 
