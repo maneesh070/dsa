@@ -1,6 +1,7 @@
+rep = 6
 def main():
-    for i in range(1, 6):
-        for j in range(0, i):
+    for i in range(1, rep):
+        for _ in range(0, i):
             print(i, end='')
         print('')
 
