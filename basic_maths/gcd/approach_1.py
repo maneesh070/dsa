@@ -5,28 +5,15 @@ def hcf(A, B):
     elif B == 0:
         gcd = A
     elif A != 0 and B != 0:
-        if A > B:
-            factor = B
-            while A%factor != 0 or B%factor != 0:
-                factor -= 1
-            gcd = factor
+        factor = min(A, B)
+        while A%factor != 0 or B%factor != 0:
+            factor -= 1
+        gcd = factor
 
-        else:
-            factor = A
-            while B%factor != 0 or A%factor != 0:
-                factor -= 1
-            gcd = factor
-
-    if A>B:
-        M = A
-        while M%B != 0 or M%A != 0:
-            M += 1
-        lcm = M
-    else:
-        N = B
-        while N%A != 0 or N%B != 0:
-            N += 1
-        lcm = N
+    M = max(A, B)
+    while M%B != 0 or M%A != 0:
+        M += 1
+    lcm = M
 
     return gcd, lcm
 
