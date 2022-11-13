@@ -1,7 +1,3 @@
-import re
-from tkinter import N
-
-
 def main():
     n = 3432
     x = n
