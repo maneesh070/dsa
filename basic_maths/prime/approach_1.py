@@ -1,4 +1,4 @@
-n = 10
+n = 7
 def main():
     a = []
     if n == 1 or n == 2:
@@ -9,8 +9,8 @@ def main():
                 a.append(i)
     if len(a) == 0:
         print("Prime")
-
-    print("Non-Prime")
+    else:
+        print("Non-Prime")
 
 if __name__ == '__main__':
     main()
