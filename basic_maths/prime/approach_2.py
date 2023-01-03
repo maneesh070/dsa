@@ -1,16 +1,37 @@
 def isPrime(n):
     is_prime = True
     if n == 1 or n == 2:
-        return 'Prime'
-    else:
-        for i in range(2, n):
-            if n%i == 0:
-                is_prime = False
+        return is_prime
 
-    if is_prime == True:
-        return 'Prime'
-    return 'Non-Prime'
+    root = sqrt(n)
+    for i in range(2, root + 1):
+        if n%i == 0:
+            is_prime = False
+            return is_prime
 
-n = 29
+    return is_prime
+
+def isItPrime(n):
+    if n == 1 or n == 2:
+        return True
+
+    root = sqrt(n)
+    for i in range(2, root + 1):
+        if n%i == 0:
+            return False
+    return True
+
+def sqrt(num):
+    step = 0.1
+    root = 1
+    while True:
+        if root*root <= num + step and root*root >= num - step:
+            print(f"Value of start is: {root}")
+            return round(root, 3)
+
+        root += step
+
+
+n = 25
 ans = isPrime(n)
 print(ans)
