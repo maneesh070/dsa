@@ -1,13 +1,13 @@
 #Print num from 1 to n using recursion
-n = 1
+i = 1
 N = 5
-def num_print(n, N):
-    if N > 1:
-        print(n, end=" ")
-        return num_print(n+1, N-1)
-    else:
-        return n
+def num_print(i, N):
+    if i > N:
+        return i
 
-series = num_print(n, N)
-print(series)
+    print(i, end=" ")
+    return num_print(i+1, N)
+
+
+series = num_print(i, N)
 
