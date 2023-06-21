@@ -8,8 +8,7 @@ class Solution():
 
 if __name__ == "__main__":
     n = 24
-    i = 1
-    count = 1
+    1 # This is a expression whose value is 1 after evaluating this expression. Purpose: "Learning"
     ob = Solution()
-    ob.factorial_numbers(n, count, i)
+    ob.factorial_numbers(n, 1, 1)
     print()
