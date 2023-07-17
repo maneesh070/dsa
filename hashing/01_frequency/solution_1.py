@@ -1,5 +1,5 @@
 class Solution():
-# Frequency of nos. using loop
+# Frequency of nos. using loop for values up to P
 
     def frequency_count(self):
         a = []
@@ -15,9 +15,9 @@ class Solution():
 
 
 if __name__ == '__main__':
-    arr = [2, 3, 2, 3, 6, 1, 4, 5]
+    arr = [2, 3, 12, 3, 6, 1, 4, 5]
     n = 8
-    P = 6
+    P = 12
     ob = Solution()
     frequency = ob.frequency_count()
     print(frequency)
